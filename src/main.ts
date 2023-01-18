@@ -159,9 +159,7 @@ csv('cereals.csv').then((data) => {
           el[0].element
           let datasetIndex = el[0].datasetIndex
           let dataIndex = el[0].index
-          // @ts-ignore
           let datasetLabel = e.chart.data.datasets[datasetIndex].label
-          // @ts-ignore
           let value = e.chart.data.datasets[datasetIndex].data[dataIndex]
 
           // @ts-ignore
@@ -248,7 +246,6 @@ csv('cereals.csv').then((data) => {
               display: false,
             },
           },
-          // @ts-ignore
           emptyDoughnut: {
             color: 'rgba(255, 128, 0, 0.5)',
             width: 2,
@@ -350,7 +347,6 @@ csv('cereals.csv').then((data) => {
               },
             ]
             doughnutChart.data.datasets = doughnutDs
-            // @ts-ignore
             document.getElementById('name').textContent = cereal.name
             doughnutChart.update()
 
@@ -400,7 +396,6 @@ csv('cereals.csv').then((data) => {
   })
 
   document.getElementById('cals-button')?.addEventListener('click', () => {
-    // @ts-ignore
     manufComparisonBarChart.options.plugins.title.text =
       'Mean Calories per Manufacturer'
     manufComparisonBarChart.data.datasets = calsDataset
@@ -408,7 +403,6 @@ csv('cereals.csv').then((data) => {
   })
 
   document.getElementById('sugars-button')?.addEventListener('click', () => {
-    // @ts-ignore
     manufComparisonBarChart.options.plugins.title.text =
       'Mean Sugars per Manufacturer'
     manufComparisonBarChart.data.datasets = sugarsDataset
@@ -416,7 +410,6 @@ csv('cereals.csv').then((data) => {
   })
 
   document.getElementById('nutri-button')?.addEventListener('click', () => {
-    // @ts-ignore
     manufComparisonBarChart.options.plugins.title.text =
       'Mean Nutri-Score per Manufacturer'
     manufComparisonBarChart.data.datasets = nutriDataset
@@ -424,7 +417,6 @@ csv('cereals.csv').then((data) => {
   })
 
   document.getElementById('prot-button')?.addEventListener('click', () => {
-    // @ts-ignore
     manufComparisonBarChart.options.plugins.title.text =
       'Mean Protein per Manufacturer'
     manufComparisonBarChart.data.datasets = protDataset
