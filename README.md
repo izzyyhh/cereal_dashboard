@@ -3,7 +3,8 @@
 web visualization - dashboard with diagrams about cereals.
 
 Live Demo: https://izzyyhh.github.io/cereal_dashboard/  
-To run
+  
+To run locally
 
 ```
 npm i
