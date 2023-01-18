@@ -4,10 +4,59 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Cereals</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <h1>Cereals</h1>
+    </header>
+
+    <div class="grams">
+      <div class="half1">
+        <div class="bubble">
+          <p id="resetzoom">Reset Zoom</p>
+          <canvas id="bubble"></canvas>
+        </div>
+        <div class="means-manuf">
+          <canvas id="means-manuf" style="height: 310px; width: 800px"></canvas>
+          <div class="buttonline">
+            <div>
+              <button style="background-color: #64aee3" id="cals-button">
+                Calories
+              </button>
+            </div>
+            <div>
+              <button style="background-color: #e37964" id="sugars-button">
+                Sugars
+              </button>
+            </div>
+            <div>
+              <button style="background-color: #70422c" id="prot-button">
+                Protein
+              </button>
+            </div>
+            <div>
+              <button style="background-color: #16a16e" id="nutri-button">
+                Nutri-Score
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="half2">
+        <h3 id="name">Name</h3>
+        <div class="doughnut">
+          <canvas id="doughnut"></canvas>
+        </div>
+        <div class="radar">
+          <canvas id="radar"></canvas>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
